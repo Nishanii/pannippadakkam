@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffe6f3;
+    color: #8c1655;
+    margin-top: 40px; 
+    width: 100%;
+}
+
+nav {
+    background: #b71d6f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    
+}
+
+nav ul li {
+    margin: 0 15px;
+    color: #fdd0e8;
+    text-decoration: none;
+}
+
+nav ul li a {
+    color: #fdd0e8;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    
+    transform: scale(1.05);
+    transition: color 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+nav ul li a:hover {
+    color: #dc7baf;
+    
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3{
+    text-align: center;
+    margin: 0px;
+    font-family: 'Arial', sans-serif;
+    color: #8c1655;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.member {
+    background-color: #8b1e586e;
+    box-shadow: #8b1e586e 0px 2px 5px;
+    border-radius: 4px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 230px;
+    width: 200px;
+    margin: 20px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+}
+
+.member:hover {
+    background-color: #bf7ca0;
+    transform: scale3d(1.02, 1.02, 1.05);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, scale3d 0.3s ease-in-out;
+}
+.member img {
+    width: 175px;
+    height: 175px;
+    border-radius: 4px;
+    object-fit: cover;
+    margin-bottom: -5px;
+}
+
+.member div {
+    padding: 20px;
+}
+.member div h3 a{
+    box-sizing: border-box;
+    color: #8c1655;
+    text-decoration: none;
+}
+.member div h3 a:hover {
+    color: #ffc6e4;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #b71d6f;
+    color: #fdd0e8;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
